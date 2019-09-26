@@ -1,3 +1,14 @@
+# Dharam's Fork Instructions
+This fork incorporates changes to make terraform plan changes more readable, specifically for postmates data eng folks
+```
+brew uninstall terraform_landscape
+cd ~/postmates/ && git clone git@github.com:dharamsk/terraform-landscape.git && cd terraform-landscape
+gem install bundler
+bundler
+gem build terraform_landscape.gemspec
+gem install terraform_landscape-0.3.2.gem && rm terraform_landscape-0.3.2.gem
+```
+
 # Terraform Landscape
 
 [![Gem Version](https://badge.fury.io/rb/terraform_landscape.svg)](http://badge.fury.io/rb/terraform_landscape)
