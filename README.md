@@ -7,7 +7,10 @@ gem install bundler
 bundler
 gem build terraform_landscape.gemspec
 gem install terraform_landscape-0.3.2.gem && rm terraform_landscape-0.3.2.gem
+echo 'alias landscape='/usr/local/lib/ruby/gems/2.6.0/gems/terraform_landscape-0.3.2/bin/landscape'' >>~/.bash_profile
 ```
+(change ~/.bash_profile to .bash_rc or other as necessary)
+(if the path is invalid, find the landscape executable and fix the last line above. Might be a diff version of ruby..)
 
 # Terraform Landscape
 
