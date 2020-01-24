@@ -6,7 +6,7 @@ cd ~/postmates/ && git clone git@github.com:dharamsk/terraform-landscape.git && 
 brew install ruby
 echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
-gem install bundler
+sudo gem install bundler
 bundler
 gem build terraform_landscape.gemspec
 gem install terraform_landscape-0.3.2.gem && rm terraform_landscape-0.3.2.gem
@@ -15,6 +15,7 @@ source ~/.bash_profile
 ```
 (change ~/.bash_profile to .bash_rc or other as necessary)
 (if the path is invalid, find the landscape executable and fix the last line above. Might be a diff version of ruby..)
+(you can find the path to the executable by running `gem info terraform_landscape`)
 
 # Terraform Landscape
 
